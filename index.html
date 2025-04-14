@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trip Budget Planner</h1>
+
+    <form action="submit_trip.php" method="POST">
+        <label>Food Cost: <input type="number" step="0.01" name="food_cost" required></label><br>
+
+        <h3>Optional Budgets</h3>
+        <label>Total Budget Limit: <input type="number" step="0.01" name="max_total_budget"></label><br>
+        <label>Transportation Budget: <input type="number" step="0.01" name="max_transport_budget"></label><br>
+        <label>Accommodation Budget: <input type="number" step="0.01" name="max_accommodation_budget"></label><br>
+        <label>Activities Budget: <input type="number" step="0.01" name="max_activities_budget"></label><br>
+
+        <button type="submit">Submit Trip</button>
+    </form>
+</body>
+</html>
